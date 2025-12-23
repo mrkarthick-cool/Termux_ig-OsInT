@@ -1,109 +1,141 @@
-#⚡ #Termux Instagram OSINT Tool – Hacker Installation Guide
+<p align="center">
+  <img src="https://img.shields.io/badge/OSINT-Instagram-red?style=for-the-badge&logo=instagram">
+  <img src="https://img.shields.io/badge/Termux-Android-green?style=for-the-badge&logo=android">
+  <img src="https://img.shields.io/badge/Shell-Bash-black?style=for-the-badge&logo=gnu-bash">
+</p>
 
-By: Drak24Evil
+<p align="center">
+  <img src="https://img.shields.io/github/stars/mrkarthick-cool/Termux_ig-OsInT?style=flat-square">
+  <img src="https://img.shields.io/github/forks/mrkarthick-cool/Termux_ig-OsInT?style=flat-square">
+  <img src="https://img.shields.io/github/issues/mrkarthick-cool/Termux_ig-OsInT?style=flat-square">
+  <img src="https://img.shields.io/github/license/mrkarthick-cool/Termux_ig-OsInT?style=flat-square">
+</p>
 
-#🔗 GitHub Repository
+<h1 align="center">⚡ Termux Instagram OSINT Tool</h1>
+<h3 align="center">Public Instagram OSINT Tool with Web GUI</h3>
+
+<p align="center">
+  <b>By Drak24Evil</b><br>
+  Ethical Hacking • OSINT • Cybersecurity
+</p>
+
+---
+
+## 🔗 GitHub Repository
 👉 https://github.com/mrkarthick-cool/Termux_ig-OsInT
 
-#🧩 STEP 1 — Install Termux (Correct Source)
+---
 
-#⚠️ DO NOT use Google Play Store (outdated & broken)
+## 🧠 About This Tool
 
-✅ Install via F-Droid
+| Feature | Description |
+|------|------------|
+| 📸 Target | Public Instagram Accounts |
+| 🐧 Platform | Termux (Android) |
+| 🖥️ GUI | PHP Web Dashboard |
+| ⚙️ Backend | Bash + curl + jq |
+| 🔓 Login | ❌ Not Required |
+| 🛡️ Purpose | Educational OSINT Only |
 
-Install F-Droid
+---
 
-Open F-Droid → Search Termux
+## ⚠️ Disclaimer
 
-Install the latest version
+> This tool is made **ONLY for educational and ethical OSINT purposes**.  
+> The author is **NOT responsible** for misuse or illegal activity.
 
-Open Termux once after installation
+---
 
-#🧩 STEP 2 — Initial Setup (MANDATORY)
+## 🧩 STEP 1 — Install Termux (Correct Source)
 
-Run this command first:
+⚠️ **DO NOT use Google Play Store** (outdated & broken)
 
+| Action | Instruction |
+|----|----|
+| 📦 Source | F-Droid |
+| 🔍 Search | Termux |
+| ⬇️ Install | Latest Version |
+| ▶️ Open | Once after install |
+
+---
+
+## 🧩 STEP 2 — Initial Setup (MANDATORY)
+
+```bash
 termux-change-repo
-
-
 ✔ Enable Main repository
 ✔ Enable Stable repository
 ✔ Press OK
 
-Then update system:
+Update system:
 
+bash
+Copy code
 pkg update && pkg upgrade -y
-
-#🧩 STEP 3 — Install Required Packages
-
-Minimum packages required for OSINT + GUI server:
-
+🧩 STEP 3 — Install Required Packages
+bash
+Copy code
 pkg install curl jq php -y
+Verify installation:
 
-🔍 Verify installation
+bash
+Copy code
 curl --version
 jq --version
 php -v
-
-
-✅ All three commands must return version info
-
-#🧩 STEP 4 — Clone Tool from GitHub
-
-Go to home directory:
-
+🧩 STEP 4 — Clone Tool from GitHub
+bash
+Copy code
 cd ~
-
-
-Clone repository:
-
 git clone https://github.com/mrkarthick-cool/Termux_ig-OsInT
-
-
-Enter tool directory:
-
 cd Termux_ig-OsInT
-
-
-#🧩 STEP 5 — Make Script Executable
+🧩 STEP 5 — Make Script Executable
+bash
+Copy code
 chmod +x ig.sh
-
-✅ Confirm permission
 ls -l ig.sh
-
-
 Expected output:
 
+text
+Copy code
 -rwxr-xr-x
-
-#🧩 STEP 6 — Run the Tool
-
-Usage:
-
+🧩 STEP 6 — Run the Tool
+bash
+Copy code
 ./ig.sh <username>
-
-
 Example:
 
+bash
+Copy code
 ./ig.sh priya
-
-#📟 Expected Terminal Output
+📟 Expected Output
+text
+Copy code
 Instagram OSINT data
 [+] GUI running at: http://127.0.0.1:8080
+⚠️ Do NOT close Termux
 
+🧩 STEP 7 — Open Web GUI
+Open browser and visit:
 
-⚠️ PHP server keeps running — do NOT close Termux
-
-#🧩 STEP 7 — Open Web GUI (Hacker Dashboard)
-
-Open any browser on the same device and visit:
-
+text
+Copy code
 http://127.0.0.1:8080
+🖥️ GUI Output
+Data	Status
+Profile Picture	✅
+Username	✅
+Full Name	✅
+Bio	✅
+Posts	✅
+Followers	✅
+Following	✅
+Private Status	✅
 
-#✅ You will see:
+📌 Author Links
+Telegram: https://t.me/Drak24Evil
 
-Profile picture
+GitHub: https://github.com/mrkarthick-cool
 
-Username / Bio
+YouTube: https://youtube.com/@mranonymousking5638
 
-Followers / Following / Posts
