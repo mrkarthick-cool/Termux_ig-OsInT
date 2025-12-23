@@ -74,7 +74,7 @@ padding:15px;
 ">
 termux-change-repo
 pkg update && pkg upgrade -y
-pkg install curl jq php -y
+pkg install curl jq php git -y
 </pre>
 
 <hr style="border:1px solid #00ffcc;">
