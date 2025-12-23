@@ -1,141 +1,123 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/OSINT-Instagram-red?style=for-the-badge&logo=instagram">
-  <img src="https://img.shields.io/badge/Termux-Android-green?style=for-the-badge&logo=android">
-  <img src="https://img.shields.io/badge/Shell-Bash-black?style=for-the-badge&logo=gnu-bash">
+<div align="center" style="
+background:black;
+color:#00ffcc;
+font-family:monospace;
+padding:30px;
+border:2px solid #00ffcc;
+box-shadow:0 0 20px #00ffcc;
+">
+
+<h1 style="
+color:#00ffcc;
+text-shadow:0 0 5px #00ffcc, 0 0 10px #00ffcc;
+">
+⚡ TERMUX INSTAGRAM OSINT TOOL ⚡
+</h1>
+
+<h3 style="color:#00ffaa;">
+Public Instagram OSINT Tool with Web GUI
+</h3>
+
+<p style="color:#00ffcc;">
+<b>By Drak24Evil</b><br>
+Ethical Hacking • OSINT • Cybersecurity
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/mrkarthick-cool/Termux_ig-OsInT?style=flat-square">
-  <img src="https://img.shields.io/github/forks/mrkarthick-cool/Termux_ig-OsInT?style=flat-square">
-  <img src="https://img.shields.io/github/issues/mrkarthick-cool/Termux_ig-OsInT?style=flat-square">
-  <img src="https://img.shields.io/github/license/mrkarthick-cool/Termux_ig-OsInT?style=flat-square">
+<hr style="border:1px solid #00ffcc;">
+
+<h2 style="text-shadow:0 0 10px #00ffcc;">🔗 GITHUB REPOSITORY</h2>
+
+<a href="https://github.com/mrkarthick-cool/Termux_ig-OsInT" style="
+color:#00ffaa;
+font-size:18px;
+text-decoration:none;
+">
+https://github.com/mrkarthick-cool/Termux_ig-OsInT
+</a>
+
+<hr style="border:1px solid #00ffcc;">
+
+<h2 style="text-shadow:0 0 10px #00ffcc;">🧠 ABOUT THIS TOOL</h2>
+
+<table align="center" style="
+border-collapse:collapse;
+color:#00ffcc;
+">
+<tr><th>Feature</th><th>Description</th></tr>
+<tr><td>📸 Target</td><td>Public Instagram Accounts</td></tr>
+<tr><td>🐧 Platform</td><td>Termux (Android)</td></tr>
+<tr><td>🖥️ GUI</td><td>PHP Web Dashboard</td></tr>
+<tr><td>⚙️ Backend</td><td>Bash + curl + jq</td></tr>
+<tr><td>🔓 Login</td><td>❌ Not Required</td></tr>
+<tr><td>🛡️ Purpose</td><td>Educational OSINT Only</td></tr>
+</table>
+
+<hr style="border:1px solid #00ffcc;">
+
+<h2 style="text-shadow:0 0 10px #ff0055;">⚠️ DISCLAIMER</h2>
+
+<p style="color:#ff0055;">
+THIS TOOL IS FOR <b>EDUCATIONAL & ETHICAL OSINT ONLY</b><br>
+AUTHOR IS <b>NOT RESPONSIBLE</b> FOR MISUSE
 </p>
 
-<h1 align="center">⚡ Termux Instagram OSINT Tool</h1>
-<h3 align="center">Public Instagram OSINT Tool with Web GUI</h3>
+<hr style="border:1px solid #00ffcc;">
 
-<p align="center">
-  <b>By Drak24Evil</b><br>
-  Ethical Hacking • OSINT • Cybersecurity
-</p>
+<h2 style="text-shadow:0 0 10px #00ffcc;">🧩 INSTALLATION (MANDATORY)</h2>
 
----
-
-## 🔗 GitHub Repository
-👉 https://github.com/mrkarthick-cool/Termux_ig-OsInT
-
----
-
-## 🧠 About This Tool
-
-| Feature | Description |
-|------|------------|
-| 📸 Target | Public Instagram Accounts |
-| 🐧 Platform | Termux (Android) |
-| 🖥️ GUI | PHP Web Dashboard |
-| ⚙️ Backend | Bash + curl + jq |
-| 🔓 Login | ❌ Not Required |
-| 🛡️ Purpose | Educational OSINT Only |
-
----
-
-## ⚠️ Disclaimer
-
-> This tool is made **ONLY for educational and ethical OSINT purposes**.  
-> The author is **NOT responsible** for misuse or illegal activity.
-
----
-
-## 🧩 STEP 1 — Install Termux (Correct Source)
-
-⚠️ **DO NOT use Google Play Store** (outdated & broken)
-
-| Action | Instruction |
-|----|----|
-| 📦 Source | F-Droid |
-| 🔍 Search | Termux |
-| ⬇️ Install | Latest Version |
-| ▶️ Open | Once after install |
-
----
-
-## 🧩 STEP 2 — Initial Setup (MANDATORY)
-
-```bash
+<pre style="
+background:black;
+color:#00ffcc;
+border:1px solid #00ffcc;
+box-shadow:0 0 10px #00ffcc;
+padding:15px;
+">
 termux-change-repo
-✔ Enable Main repository
-✔ Enable Stable repository
-✔ Press OK
-
-Update system:
-
-bash
-Copy code
 pkg update && pkg upgrade -y
-🧩 STEP 3 — Install Required Packages
-bash
-Copy code
 pkg install curl jq php -y
-Verify installation:
+</pre>
 
-bash
-Copy code
-curl --version
-jq --version
-php -v
-🧩 STEP 4 — Clone Tool from GitHub
-bash
-Copy code
+<hr style="border:1px solid #00ffcc;">
+
+<h2 style="text-shadow:0 0 10px #00ffcc;">🧩 CLONE & RUN</h2>
+
+<pre style="
+background:black;
+color:#00ffcc;
+border:1px solid #00ffcc;
+box-shadow:0 0 10px #00ffcc;
+padding:15px;
+">
 cd ~
 git clone https://github.com/mrkarthick-cool/Termux_ig-OsInT
 cd Termux_ig-OsInT
-🧩 STEP 5 — Make Script Executable
-bash
-Copy code
 chmod +x ig.sh
-ls -l ig.sh
-Expected output:
+./ig.sh username
+</pre>
 
-text
-Copy code
--rwxr-xr-x
-🧩 STEP 6 — Run the Tool
-bash
-Copy code
-./ig.sh <username>
-Example:
+<hr style="border:1px solid #00ffcc;">
 
-bash
-Copy code
-./ig.sh priya
-📟 Expected Output
-text
-Copy code
-Instagram OSINT data
-[+] GUI running at: http://127.0.0.1:8080
-⚠️ Do NOT close Termux
+<h2 style="text-shadow:0 0 10px #00ffcc;">🖥️ WEB GUI</h2>
 
-🧩 STEP 7 — Open Web GUI
-Open browser and visit:
+<p>
+Open browser:<br>
+<b style="color:#00ffaa;">http://127.0.0.1:8080</b>
+</p>
 
-text
-Copy code
-http://127.0.0.1:8080
-🖥️ GUI Output
-Data	Status
-Profile Picture	✅
-Username	✅
-Full Name	✅
-Bio	✅
-Posts	✅
-Followers	✅
-Following	✅
-Private Status	✅
+<hr style="border:1px solid #00ffcc;">
 
-📌 Author Links
-Telegram: https://t.me/Drak24Evil
+<h2 style="text-shadow:0 0 10px #00ffcc;">📌 AUTHOR LINKS</h2>
 
-GitHub: https://github.com/mrkarthick-cool
+<p>
+Telegram → <a style="color:#00ffaa;" href="https://t.me/Drak24Evil">t.me/Drak24Evil</a><br>
+GitHub → <a style="color:#00ffaa;" href="https://github.com/mrkarthick-cool">mrkarthick-cool</a><br>
+YouTube → <a style="color:#00ffaa;" href="https://youtube.com/@mranonymousking5638">@mranonymousking5638</a>
+</p>
 
-YouTube: https://youtube.com/@mranonymousking5638
+<hr style="border:1px solid #00ffcc;">
 
+<h3 style="color:#00ffaa; text-shadow:0 0 10px #00ffcc;">
+⚡ HAPPY ETHICAL HACKING ⚡
+</h3>
+
+</div>
